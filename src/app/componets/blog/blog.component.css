@@ -1,0 +1,72 @@
+/* NOTICIAS */
+
+ul {
+  list-style: none;
+}
+
+#noticias {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+/* FORMULARIO */
+
+#formulario_contenedor {
+  background-image: url(https://as1.ftcdn.net/v2/jpg/02/98/43/66/1000_F_298436615_DG9F5JkQzO4OOb8K1lVuErdztzTqWGJa.jpg);
+  background-size: cover;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3%;
+  border: 1px solid #000;
+  padding-left: 3%;
+  padding-bottom: 2%;
+}
+
+.publicacion {
+  display: flex;
+  justify-content: space-around;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: rgb(249, 96, 40);
+}
+
+label,
+inputs {
+  display: block;
+  padding: 3px;
+  margin-bottom: 2px;
+}
+
+.encabezado {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(35, 124, 241);
+}
+
+#noticia {
+  width: 50%;
+  height: 150px;
+  resize: none;
+}
+
+.boton {
+  margin-top: 2%;
+  font-size: large;
+  color: white;
+  background-color: rgb(2, 124, 247);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  margin-top: 2%;
+  font-size: large;
+  color: rgb(132, 4, 244);
+  background-color: rgb(0, 200, 77);
+  border-radius: 5px;
+}
+
+.datos {
+  width: 50%;
+  height: 20px;
+}

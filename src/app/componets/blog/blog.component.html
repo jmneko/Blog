@@ -1,0 +1,27 @@
+<section id="noticias">
+  <ul [innerHTML]="cargarDatos()"></ul>
+</section>
+
+
+<section id="formulario_contenedor">
+  <div class="formulario">
+    <p class="publicacion">Publica tu noticia</p>
+    <label for="titulo" class="encabezado">Título:</label>
+    <input type="text" id="titulo" placeholder="Introduce titulo" [(ngModel)]="nuevaNoticia.titulo" class="datos" />
+  </div>
+  <div>
+    <label for="url" class="encabezado">Imagen:</label>
+    <input type="url" id="url" placeholder="Introduce url de imagen" [(ngModel)]="nuevaNoticia.imagen" class="datos" />
+  </div>
+  <div>
+    <label for="noticia" class="encabezado">Noticia:</label>
+    <textarea id="noticia" placeholder="Escribe la noticia" [(ngModel)]="nuevaNoticia.noticia"
+      class="datos noticia"></textarea>
+  </div>
+  <div>
+    <label for="fecha" class="encabezado">Fecha de publicación</label>
+    <input type="date" id="fecha" placeholder="Introduce fecha de publicación" [(ngModel)]="nuevaNoticia.fecha"
+      class="datos" />
+  </div>
+  <button class="boton" (click)="publicar()">Publicar</button>
+</section>
